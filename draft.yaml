@@ -1,0 +1,22 @@
+models:
+  - Country:
+      name: string
+      relationships:
+        hasMany: User
+
+  - Post:
+      name: string
+      relationships:
+        belongsTo: User
+
+controllers:
+  - Country:
+      resource
+
+  - User:
+      resource
+
+  - Post:
+      resource
+
+seeders: Country, User, Post
